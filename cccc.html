@@ -5,13 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            float: left;
+            margin: 50px;
+        }
+        #red{
+            background-color: red;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #green{
+            background-color: green;
+        }
+        #blue{
+            background-color: blue;
+        }
+    </style>
 </head>
 <body>
-    <button onclick= 'alert("Page is Loaded")'>Submit</button>
+    <div class="circle" id="red" onclick="red()"></div>
+    <div class="circle" id="yellow" onclick="yellow()"></div>
+    <div class="circle" id="green" onclick="green()"></div>
+    <div class="circle" id="blue" onclick="blue()"></div>
 
     </form> 
-</body>
-<script>
+    <script>
+        function red(){
+            document.getElementById("red").style.display= "none";
+        }
 
-</script>
+        function yellow(){
+            document.getElementById("yellow").style.display= "none";
+        }
+
+        function green(){
+            document.getElementById("green").style.display= "none";
+        }
+       
+        function blue(){
+            document.getElementById("blue").style.display= "none";
+        }
+   </script>
+</body>
+
 </html>
